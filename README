@@ -1,0 +1,7 @@
+From the following link, download a stable **chromedriver** and place it in the base directory.
+```https://googlechromelabs.github.io/chrome-for-testing/#stable```
+
+Install dependencies
+```pip install -r requiremenets.txt```
+
+Then run main.py, or main.ipynb (for jupyter notebook)
