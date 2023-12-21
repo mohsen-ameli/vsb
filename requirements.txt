@@ -1,3 +1,4 @@
 ipykernel
 selenium
 python-dotenv
+bs4
