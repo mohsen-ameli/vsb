@@ -4,6 +4,8 @@ From the following link, download a stable **chromedriver** and place it in the 
 Install dependencies
 ```pip install -r requiremenets.txt```
 
+IF you are on raspberry pi, run ```sudo apt-get install chromium-chromedriver```
+
 Then run main.py, or main.ipynb (for jupyter notebook)
 
 You have to login with york's 2fa, then once in the terminal it says "bot has connected to Discord!",

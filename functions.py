@@ -138,6 +138,7 @@ def run_discord_bot(driver: webdriver.Chrome):
             # Every 5-10 minutes check if there are seats available, and if yes, send a message to the me
             while True:
                 info = fetch_info(driver)
+                print(info)
                 if info["seats"] == True:
                     await message.author.send(f"Seats are available for {info['title']} with {info['prof']}")
                 await asyncio.sleep(random.randint(5, 10) * 60)
