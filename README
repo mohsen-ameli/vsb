@@ -5,3 +5,12 @@ Install dependencies
 ```pip install -r requiremenets.txt```
 
 Then run main.py, or main.ipynb (for jupyter notebook)
+
+You have to login with york's 2fa, then once in the terminal it says "bot has connected to Discord!",
+then you can go on the specific channel on discord, and type "start" to start the bot. 
+
+You need to have values for the following fields:
+USER_NAME -> "for york's username"
+PASSWORD -> "for york's password"
+DISCORD_TOKEN -> "your discord private token"
+DISCORD_TARGET_USER -> "a user's id on discord to listen for the command 'start'"

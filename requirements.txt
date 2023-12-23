@@ -2,3 +2,4 @@ ipykernel
 selenium
 python-dotenv
 bs4
+discord
