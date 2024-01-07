@@ -4,7 +4,9 @@ From the following link, download a stable **chromedriver** and place it in the 
 Install dependencies
 ```pip install -r requiremenets.txt```
 
-IF you are on raspberry pi, run ```sudo apt-get install chromium-chromedriver```
+IF you are on raspberry pi, run ```sudo apt-get install chromium-chromedriver```,
+IF you are on windows or mac or linux then go to this url ```https://googlechromelabs.github.io/chrome-for-testing/``` and click on stable, then download the appropriate **chromedriver**. Once 
+downloaded, put the file in the same folder as the main.py file, and take note of the exact path to the chromdriver file, as it will be needed for one of the environment variables.
 
 Then run main.py, or main.ipynb (for jupyter notebook)
 
@@ -16,3 +18,4 @@ USER_NAME -> "for york's username"
 PASSWORD -> "for york's password"
 DISCORD_TOKEN -> "your discord private token"
 DISCORD_TARGET_USER -> "a user's id on discord to listen for the command 'start'"
+CHROME_DRIVER_PATH -> "the exact chrome driver path which you have downloaded."

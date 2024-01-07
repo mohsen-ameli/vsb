@@ -11,14 +11,6 @@ import random
 import asyncio
 
 ###
-# the main parameters
-###
-url = "https://schedulebuilder.yorku.ca/vsb/criteria.jsp?access=0&lang=en&tip=0&page=results&scratch=0&term=2023102119"
-course_name = "LE-EECS-2101-3.00-EN"
-course_term = "Term W"
-course_section = "Section N"
-
-###
 # Environment variables
 ###
 load_dotenv()
@@ -26,19 +18,21 @@ username = os.getenv("USER_NAME")
 password = os.getenv("PASSWORD")
 discord_token = os.getenv("DISCORD_TOKEN")
 discord_user = os.getenv("DISCORD_TARGET_USER")
+url = "https://schedulebuilder.yorku.ca/vsb/criteria.jsp?access=0&lang=en&tip=0&page=results&scratch=0&term=2023102119"
 
 ###
-# Will give you the seats and prof info using the visual schedule builder from york
+# This function will first log the user in using the login function,
+# then it will search for the course and select the term and section
 ###
-def get_info_vsb(driver: webdriver.Chrome) -> dict:
-    info = {}
-
+def login_and_select_course(
+    course_name:str,
+    course_term: str,
+    course_section: str,
+    driver: webdriver.Chrome
+):
     try:
         driver.get(url)
-        sleep(1)
         login(driver)
-        driver.refresh()
-        sleep(1)
 
         # Search for the course
         driver.find_element(By.ID, "code_number").send_keys(course_name + Keys.ENTER)
@@ -59,12 +53,11 @@ def get_info_vsb(driver: webdriver.Chrome) -> dict:
         sleep(5)
         print("Waiting for page to load...")
 
-    return info
-
 ###
 # Login to the york passport
 ###
 def login(driver: webdriver.Chrome):
+    sleep(1)
     driver.find_element(By.ID, "mli").send_keys(username)
     driver.find_element(By.ID, "password").send_keys(password + Keys.ENTER)
 
@@ -86,10 +79,17 @@ def login(driver: webdriver.Chrome):
     ####################
     sleep(20)
 
+    # Refreshing
+    driver.refresh()
+    
+    sleep(1)
+
+    print("--> Logged in successfully")
+
 ###
-# fetches info from VSB by refreshing the page
+# fetches fresh info from VSB by refreshing the page
 ###
-def fetch_info(driver: webdriver.Chrome) -> dict:
+def fetch_info(course_name: str, driver: webdriver.Chrome) -> dict:
     driver.refresh()
     sleep(1)
     
@@ -119,7 +119,7 @@ def fetch_info(driver: webdriver.Chrome) -> dict:
 ###
 # Runs the discord bot
 ###
-def run_discord_bot(driver: webdriver.Chrome):
+def run_discord_bot(course_name: str, driver: webdriver.Chrome):
     intents = discord.Intents.default()
     intents.message_content = True
     client = discord.Client(intents=intents)
@@ -137,7 +137,7 @@ def run_discord_bot(driver: webdriver.Chrome):
             await message.channel.send("Ok starting bot daddy...")
             # Every 5-10 minutes check if there are seats available, and if yes, send a message to the me
             while True:
-                info = fetch_info(driver)
+                info = fetch_info(course_name, driver)
                 print(info)
                 if info["seats"] == True:
                     await message.author.send(f"Seats are available for {info['title']} with {info['prof']}")
@@ -152,7 +152,8 @@ def run_discord_bot(driver: webdriver.Chrome):
 ###
 # @DEPRECATED
 # Function that will give you the info from the york's courses website
-# This website has a ~2 minute cookie time, so you have to login every 2 minutes
+# This website has a ~2 minute cookie time, so you have to login every 2 minutes,
+# which is why I marked this as deprecated.
 ###
 def get_info_course_web(driver: webdriver.Chrome) -> dict:
     url = "https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm"
