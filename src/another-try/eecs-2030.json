@@ -1,0 +1,286 @@
+{
+    "faculty": "LE",
+    "subject": "EECS",
+    "term": "F",
+    "title": "Advanced Object Oriented Programming",
+    "sections": {
+      "A": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "A",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "F",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": ["May Haidar"],
+            "schedule": [
+              { "day": "T", "time": "10:00", "duration": "90", "room": "LSB 106", "campus": "Keele" },
+              { "day": "R", "time": "10:00", "duration": "90", "room": "CLH E", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "X23T02",
+            "instructors": [],
+            "schedule": [{ "day": "M", "time": "17:30", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "X23T03",
+            "instructors": [],
+            "schedule": [{ "day": "M", "time": "17:30", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "X23T04",
+            "instructors": [],
+            "schedule": [{ "day": "M", "time": "17:30", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "B": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "B",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "F",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": ["May Haidar"],
+            "schedule": [
+              { "day": "M", "time": "11:30", "duration": "90", "room": "LSB 103", "campus": "Keele" },
+              { "day": "W", "time": "11:30", "duration": "90", "room": "LSB 103", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "B70F02",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "13:00", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "B70F03",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "13:00", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "B70F04",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "13:00", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "C": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "C",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "F",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": [],
+            "schedule": [
+              { "day": "T", "time": "17:30", "duration": "90", "room": "LSB 106", "campus": "Keele" },
+              { "day": "R", "time": "17:30", "duration": "90", "room": "LSB 106", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "S17N02",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "19:00", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "S17N03",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "19:00", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "S17N04",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "19:00", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "E": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "E",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "F",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": [],
+            "schedule": [
+              { "day": "T", "time": "13:00", "duration": "90", "room": "LSB 103", "campus": "Keele" },
+              { "day": "R", "time": "13:00", "duration": "90", "room": "LSB 106", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "Y64W02",
+            "instructors": [],
+            "schedule": [{ "day": "R", "time": "17:30", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "Y64W03",
+            "instructors": [],
+            "schedule": [{ "day": "R", "time": "17:30", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "Y64W04",
+            "instructors": [],
+            "schedule": [{ "day": "R", "time": "17:30", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "F": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "F",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "F",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": [],
+            "schedule": [
+              { "day": "M", "time": "8:30", "duration": "90", "room": "DB 0001", "campus": "Keele" },
+              { "day": "W", "time": "8:30", "duration": "90", "room": "CLH E", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "F11X02",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "16:00", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "F11X03",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "16:00", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "F11X04",
+            "instructors": [],
+            "schedule": [{ "day": "T", "time": "16:00", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "M": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "M",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "W",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": ["Marzieh Ahmadzadeh"],
+            "schedule": [
+              { "day": "T", "time": "13:00", "duration": "90", "room": "LSB 103", "campus": "Keele" },
+              { "day": "R", "time": "13:00", "duration": "90", "room": "LSB 103", "campus": "Keele" }
+            ]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "V58Q02",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "11:00", "duration": "90", "room": "WSC 105", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "V58Q03",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "11:00", "duration": "90", "room": "WSC 106", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "03",
+            "category": "V58Q04",
+            "instructors": [],
+            "schedule": [{ "day": "W", "time": "11:00", "duration": "90", "room": "WSC 108", "campus": "Keele" }]
+          }
+        ]
+      },
+      "Z": {
+        "number": "2030",
+        "credit": "3.00",
+        "section": "Z",
+        "language": "EN",
+        "notes": "5.00 - Course Materials",
+        "term": "W",
+        "classes": [
+          {
+            "type": "LECT",
+            "meet": "01",
+            "category": "",
+            "instructors": ["Marzieh Ahmadzadeh"],
+            "schedule": [{ "day": "T", "time": "16:00", "duration": "180", "room": "DB 0001", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "01",
+            "category": "P05C02",
+            "instructors": [],
+            "schedule": [{ "day": "M", "time": "15:30", "duration": "90", "room": "LAS 1006", "campus": "Keele" }]
+          },
+          {
+            "type": "LAB",
+            "meet": "02",
+            "category": "P05C03",
+            "instructors": [],
+            "schedule": [{ "day": "M", "time": "17:00", "duration": "90", "room": "LAS 1006", "campus": "Keele" }]
+          }
+        ]
+      }
+    }
+  }
+  
