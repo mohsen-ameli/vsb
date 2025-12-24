@@ -1,3 +1,5 @@
+Currently not working because of a roadblock of Duo Mobile app being needed to log into visual schedule builder. Without a workaround this won't work.
+
 From the following link, download a stable **chromedriver** and place it in the base directory.
 ```https://googlechromelabs.github.io/chrome-for-testing/#stable```
 
@@ -19,3 +21,4 @@ PASSWORD -> "for york's password"
 DISCORD_TOKEN -> "your discord private token"
 DISCORD_TARGET_USER -> "a user's id on discord to listen for the command 'start'"
 CHROME_DRIVER_PATH -> "the exact chrome driver path which you have downloaded."
+
